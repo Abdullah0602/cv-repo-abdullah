@@ -1,0 +1,28 @@
+.info {
+    background-color: lightgrey;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.profile {
+    display: flex;
+    gap: 20px;
+}
+
+.about {
+    flex: 3;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
