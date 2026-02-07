@@ -9,15 +9,17 @@
 
 .profile {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .about {
-    flex: 3;
+    flex: 4;
 }
 
 .image {
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .image img {
@@ -25,4 +27,30 @@
     height: 150px;
     border-radius: 50%;
     object-fit: cover; 
+}
+
+main {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h2 {
+    display: inline-block;
+    background-color: lightyellow;
+}
+
+.education .sub div h4 {
+    margin-left: 20px;
+}
+
+.education .sub div p {
+    margin-left: 40px;
+}
+
+h2, h4 {
+    margin-block:  10px;
+}
+
+.education p, .experience p {
+    margin-block: 5px;
 }
