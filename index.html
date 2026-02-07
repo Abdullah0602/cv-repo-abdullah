@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -12,7 +12,10 @@
                 <p><i class="fab fa-github"></i> <a href="https://github.com/Abdullah0602" target="_main">github.com/Abdullah0602</a></p>
             </div>
         </header>
-        <main>  
+        <div class="button-container">
+                <button id="modeToggle">🌙</button>
+        </div>
+        <main>
             <br>
             <div class="profile">
                 <div class="about">
@@ -23,6 +26,7 @@
                     <img src="/image.jpg" alt="Image">
                 </div>
             </div>
+            <br>
             <hr><hr>
             <div class="summary">
                 <div class="left">
@@ -103,8 +107,20 @@
                 </div>
             </div>
         </main>
-        <footer>
+        <footer></footer>
+        <script>
+            const toggleBtn = document.getElementById('modeToggle');
+            const body = document.body;
 
-        </footer>
+            toggleBtn.addEventListener('click', () => {
+                body.classList.toggle('dark');
+
+                if(body.classList.contains('dark')){
+                toggleBtn.textContent = '☀️';
+                } else {
+                toggleBtn.textContent = '🌙';
+                }
+            });
+        </script>
     </body>
 </html>

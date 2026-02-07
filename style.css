@@ -1,5 +1,25 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --header-bg: lightgrey;
+    --highlight-color: #FFD54F;
+}
+
+body.dark {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --header-bg: #333333;
+    --highlight-color: #FFD54F;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
 .info {
-    background-color: lightgrey;
+    background-color: var(--header-bg);
     font-size: 18px;
 
     display: flex;
@@ -48,7 +68,7 @@ main {
 
 h2 {
     display: inline-block;
-    background-color: #FFD54F;;
+    background-color: var(--highlight-color);
 }
 
 .education .sub div h4 {
@@ -67,3 +87,7 @@ h2, h4 {
     margin-block: 5px;
 }
 
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
