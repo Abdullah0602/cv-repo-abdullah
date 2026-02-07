@@ -34,9 +34,21 @@ main {
     margin-right: 40px;
 }
 
+.summary {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 2;
+}
+
 h2 {
     display: inline-block;
-    background-color: lightyellow;
+    background-color: #FFD54F;;
 }
 
 .education .sub div h4 {
@@ -54,3 +66,4 @@ h2, h4 {
 .education p, .experience p {
     margin-block: 5px;
 }
+
