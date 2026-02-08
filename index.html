@@ -13,8 +13,10 @@
                 <p><i class="fab fa-github"></i> <a href="https://github.com/Abdullah0602" target="_main">github.com/Abdullah0602</a></p>
             </div>
         </header>
+        <br>
         <div class="button-container">
-                <button id="modeToggle">🌙</button>
+            <button id="download"><i class="fas fa-download"></i></button>
+            <button id="modeToggle">🌙</button>
         </div>
         <main>
             <br>
@@ -123,6 +125,16 @@
                 } else {
                 toggleBtn.textContent = '🌙';
                 }
+            });
+        </script>
+        <script>
+            document.getElementById("download").addEventListener("click", function() {
+            
+                const link = document.createElement("a");
+                link.href = "cv.pdf";
+                link.download = "Abdullah Tahir_CV.pdf";
+                link.click();
+            
             });
         </script>
     </body>

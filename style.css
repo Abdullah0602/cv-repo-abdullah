@@ -96,6 +96,11 @@ h2, h4 {
 .button-container {
     display: flex;
     justify-content: flex-end;
+    gap: 5px;
+}
+
+#download {
+    color: blue;
 }
 
 footer {
