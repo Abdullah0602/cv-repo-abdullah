@@ -77,12 +77,16 @@ h2 {
     background-color: var(--highlight-color);
 }
 
-.education .sub div h4 {
+.education .sub div h4, .skill .sub h4, .contact div a {
     margin-left: 20px;
 }
 
 .education .sub div p {
     margin-left: 40px;
+}
+
+.skill .sub li {
+    margin-left: 20px;
 }
 
 h2, h4 {
@@ -108,7 +112,12 @@ footer {
     color: var(--footer-color);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+
+    main {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
     .profile {
         flex-direction: column;
@@ -120,10 +129,26 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+.contact-heading {
+    display: flex;
+    justify-content: center;
+}
 
-    main {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: var(--highlight-color);
+    border: none;
+    padding: 10px;
 }
