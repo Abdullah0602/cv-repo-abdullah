@@ -8,8 +8,9 @@ This is my personal CV website created as a Web development assignment. The CV i
 - CSS
 
 ## Live Link
-[View My CV](cv-repo-abdullah-rho.vercel.app)
+[View My CV](https://cv-repo-abdullah-rho.vercel.app)
 
 ## Author
 **Name:** Muhammad Abdullah Tahir
+<br>
 **Roll No:** 23L-0602
