@@ -3,6 +3,7 @@
     --text-color: #000000;
     --header-bg: lightgrey;
     --highlight-color: #FFD54F;
+    --footer-color: lightgrey;
 }
 
 body.dark {
@@ -10,6 +11,7 @@ body.dark {
     --text-color: #ffffff;
     --header-bg: #333333;
     --highlight-color: #FFD54F;
+    --footer-color: #333333;
 }
 
 body {
@@ -25,11 +27,13 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .profile {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .about {
@@ -44,9 +48,10 @@ body {
 
 .image img {
     width: 150px;
-    height: 150px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 main {
@@ -56,6 +61,7 @@ main {
 
 .summary {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .left {
@@ -90,4 +96,29 @@ h2, h4 {
 .button-container {
     display: flex;
     justify-content: flex-end;
+}
+
+footer {
+    font-size: 12px;
+    color: var(--footer-color);
+}
+
+@media (max-width: 768px) {
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .summary {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+
+    main {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
